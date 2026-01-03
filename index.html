@@ -2,155 +2,274 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./rindex.html">
-  <title>Ddaniel Site</title>
-  
+  <title>DanTechy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header role="banner">
-    <nav role="navigation" aria-label="Primary navigation" class="container">
-      <div class="logo" tabindex="0" aria-label="Homepage link"></div>
-      <ul>
-        <li><a href="#about" tabindex="0">About</a></li>
-        <li><a href="#skills" tabindex="0">Skills</a></li>
-        <li><a href="#projects" tabindex="0">Projects</a></li>
-        <li><a href="#contact" tabindex="0">Contact</a></li>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">DanTechy</a>
+      <button class="menu-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-
-  <section class="hero" role="region" aria-label="Introduction">
-    <div class="hero-text">
-      <h1>Daniel Olorunjeda Oluwagbemiga</h1>
-      <h2>Professional Web Developer & Designer</h2>
-      <p>I craft modern, responsive websites and intuitive user experiences that make an impact. Passionate about clean code, elegant solutions, and continuous learning.</p>
-      <a href="#contact" class="btn-primary" role="button" tabindex="0">Get In Touch</a>
     </div>
-    <div class="hero-image" aria-hidden="true">
-      <img src="./Ddaniel.jpg" alt="Abstract tech graphic" />
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">I am Daniel — <span class="highlight">A Full-Stack Developer</span></h1>
+        <p class="hero-subtitle">I build web applications that are fast, functional, and actually solve problems. Not just code, but solutions that work.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+        <div class="tech-tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="./Ddaniel.jpg" alt="Daniel Olorunjeda" />
+          <div class="image-decoration"></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="about" aria-labelledby="about-heading">
-    <div class="container">
-      <div class="about-text">
-        <h2 id="about-heading">About Me</h2>
-        <p>I'm a passionate web developer with wealth experiences of building modern websites and web apps. I specialize in front-end technologies like HTML5, CSS3, JavaScript, and frameworks such as React and Node.js. I love turning concepts into beautiful, functional realities.</p>
-        <p>My approach focuses on usability, accessibility, and performance — ensuring every user has a seamless experience no matter their device or browser. Beyond programming, I enjoy teaching, traveling, and exploring new technologies.</p>
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container about-container">
+      <div class="section-header">
+        <h4 class="section-title">What I Do</h4>
+        <p class="section-subtitle">From frontend to backend — I handle the whole stack</p>
+      </div>
+      <div class="about-content">
+        <p>I'm a passionate web developer, who actually builds apps that are users' friendly. I take ideas and turn them into working applications — clean interfaces with React, solid backends with Node.js, and databases that don't break.</p>
+        
+        <p>What matters to me: <strong>code that works, applications that scale, and users who don't get frustrated.</strong> I focus on performance because slow apps lose people. I care about clean structure because messy code breaks in six months.</p>
+        
+        <div class="about-stack">
+          <div class="stack-item">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <p>React, Next.js, JavaScript, Tailwind</p>
+          </div>
+          <div class="stack-item">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <p>Node.js, Express, MongoDB, Mongoose</p>
+          </div>
+          <div class="stack-item">
+            <h3><i class="fas fa-tools"></i> Tools</h3>
+            <p>Git, Netlify, Vercel, Figma</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" aria-labelledby="skills-heading"> 
-  <div class="container">
-    <h2 id="skills-heading">Skills</h2>
-
-    <!-- Top Skills Row -->
-    <div class="skills-list" role="list" aria-label="Technical skills list - part 1">
-      <div class="skill" role="listitem" tabindex="0" aria-describedby="skill-html-desc">
-        <div class="skill-icon" aria-hidden="true">🌐</div>
-        <div class="skill-name">HTML5</div>
-        <span id="skill-html-desc" class="sr-only">Expert in HTML5 markup and semantics</span>
-      </div>
-      <div class="skill" role="listitem" tabindex="0" aria-describedby="skill-css-desc">
-        <div class="skill-icon" aria-hidden="true">🎨</div>
-        <div class="skill-name">CSS3</div>
-        <span id="skill-css-desc" class="sr-only">Skilled in CSS3, flexbox, grid, and animations</span>
-      </div>
-      <div class="skill" role="listitem" tabindex="0" aria-describedby="skill-js-desc">
-        <div class="skill-icon" aria-hidden="true">⚙️</div>
-        <div class="skill-name">JavaScript</div>
-        <span id="skill-js-desc" class="sr-only">Proficient in modern JavaScript, ES6+</span>
-      </div>
-    </div>
-
-    <!-- Bottom Skills Row -->
-    <div class="skills-list" role="list" aria-label="Technical skills list - part 2" style="margin-top: 30px;">
-      <div class="skill" role="listitem" tabindex="0" aria-describedby="skill-react-desc">
-        <div class="skill-icon" aria-hidden="true">⚛️</div>
-        <div class="skill-name">React</div>
-        <span id="skill-react-desc" class="sr-only">Experienced with React and component-based design</span>
-      </div>
-      <div class="skill" role="listitem" tabindex="0" aria-describedby="skill-node-desc">
-        <div class="skill-icon" aria-hidden="true">🟢</div>
-        <div class="skill-name">Node.js</div>
-        <span id="skill-node-desc" class="sr-only">Backend with Node.js and Express</span>
-      </div>
-      <div class="skill" role="listitem" tabindex="0" aria-describedby="skill-git-desc">
-        <div class="skill-icon" aria-hidden="true">🔧</div>
-        <div class="skill-name">Git</div>
-        <span id="skill-git-desc" class="sr-only">Version control and collaboration with Git and GitHub</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <section id="projects" aria-labelledby="projects-heading">
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
     <div class="container">
-      <h2 id="projects-heading">Projects</h2>
-      <div class="project-grid" role="list">
+      <div class="section-header">
+        <h4 class="section-title">What I Work With</h4>
+        <p class="section-subtitle">The tools I use to get things done</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>React & Next.js</li>
+            <li>JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js & Express</li>
+            <li>REST APIs</li>
+            <li>MongoDB & Mongoose</li>
+            <li>Authentication</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Development</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Testing</li>
+            <li>Deployment</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <article class="project-card" role="listitem" tabindex="0" aria-labelledby="project1-title" aria-describedby="project1-desc">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Screenshot of Project Alpha" class="project-image" />
-          <div class="project-content">
-            <h3 class="project-title" id="project1-title">TeeFabric Project</h3>
-            <p class="project-desc" id="project1-desc">A responsive multi-platform web application for displaying costume and sewn fabric.</p>
-            <div class="project-links">
-              <a href="https://danielolo4.github.io/Titilope/" target="_blank" rel="noopener" aria-label="View Project Alpha on GitHub">GitHub</a>
-              <a href="https://danielolo4.github.io/Titilope/" target="_blank" rel="noopener" aria-label="TeeFabric-Website">Live Demo</a>
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header">
+        <h4 class="section-title">Few of Things I've Built</h4>
+        <p class="section-subtitle">Real projects that actually work</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <h3>TeeFabric Apparel Platform</h3>
+            <div class="project-tags">
+              <span>E-commerce</span>
+              <span>Responsive</span>
             </div>
+          </div>
+          <p class="project-desc">Custom clothing platform with product display and size customization. Built for real user interaction.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DanielOlo4/Titilope" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="https://danielolo4.github.io/Titilope/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
           </div>
         </article>
 
-        <article class="project-card" role="listitem" tabindex="0" aria-labelledby="project2-title" aria-describedby="project2-desc">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Screenshot of Portfolio Website" class="project-image" />
-          <div class="project-content">
-            <h3 class="project-title" id="project2-title">DanTechy Website Project</h3>
-            <p class="project-desc" id="project2-desc">Project work on Quiz.</p>
-            <div class="project-links">
-              <a href="https://danielolo4.github.io/Quiz/" target="_blank" rel="noopener" aria-label="View Portfolio Website code on GitHub">GitHub</a>
-              <a href="https://dantechy.netlify.app" target="_blank" rel="noopener" aria-label="Visit live Portfolio Website">Live Demo</a>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Teety E-commerce Store</h3>
+            <div class="project-tags">
+              <span>Full-Stack</span>
+              <span>E-commerce</span>
             </div>
           </div>
+          <p class="project-desc">Complete online store with product management and cart functionality. From frontend to database.</p>
+          <div class="project-tech">
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DanielOlo4/vusi" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="https://teety.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
         </article>
-        <article class="project-card" role="listitem" tabindex="0" aria-labelledby="project3-title" aria-describedby="project3-desc">
-          <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=600&q=80" alt="Screenshot of E-commerce Store" class="project-image" />
-          <div class="project-content">
-            <h3 class="project-title" id="project3-title">Teety E-commerce Project</h3>
-            <p class="project-desc" id="project3-desc">A fully functional clone demo e-commerce site built with HTML, CSS, and JavaScript.</p>
-            <div class="project-links">
-              <a href="https://danielolo4.github.io/vusi/" target="_blank" rel="noopener" aria-label="View E-commerce Store code on GitHub">GitHub</a>
-              <a href="https://teety.netlify.app/" target="_blank" rel="noopener" aria-label="Visit live demo of E-commerce Store">Live Demo</a>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Developer Portfolio</h3>
+            <div class="project-tags">
+              <span>Design</span>
+              <span>Performance</span>
             </div>
+          </div>
+          <p class="project-desc">This website — built with attention to speed, accessibility, and clean code. Fully responsive.</p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DanielOlo4" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#contact" class="contact-link"><i class="fas fa-envelope"></i> Contact</a>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="contact" aria-labelledby="contact-heading">
-    <div class="container">
-      <h2 id="contact-heading">Get In Touch</h2>
-      <p>If you’re interested in working with me, have questions, or just want to say hello, feel free to reach out!</p>
-      <div class="contact-links" role="list">
-        <a href="https://balogundaniel130@gmail.com" class="contact-link" role="listitem" aria-label="Email your.email@example.com" target="_blank" tabindex="0">balogundaniel130@gmail.com</a>
-        <a href="https://web.facebook.com/balogun.daniel1/" class="contact-link" role="listitem" aria-label="facebook your.facebook.com" target="_blank" tabindex="0">facebook.com</a>"
-        <a href="https://www.instagram.com/balogundaniel130/" class="contact-link" role="listitem" aria-label="instagram your.instagram.com" target="_blank" tabindex="0">instagram.com</a>" 
-        <a href="tel:+1234567890" class="contact-link" role="listitem" aria-label="Call +1234567890" tabindex="0">+2348037262477, +2347087393180</a>
-        <a href="https://linkedin.com/in/daniel-olorunjeda" target="_blank" rel="noopener" class="contact-link" role="listitem" aria-label="LinkedIn profile" tabindex="0">LinkedIn</a>
-        <a href="https://github.com/DanielOlo4" target="_blank" rel="noopener" class="contact-link" role="listitem" aria-label="GitHub profile" tabindex="0">GitHub</a>
-        <a href="https://drive.google.com/file/d/1sfkgkr-3dEuKBRoTmaxivD5TkLVA-4gu/view?usp=drive_link"  target="_blank" rel="noopener" class="contact-link" role="listitem" aria-label="GitHub profile" tabindex="0">C.V in PDF Format</a>
-         
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container contact-container">
+      <div class="contact-content">
+        <h4 class="section-title">Let's Build Something</h4>
+        <p class="contact-text">I'm available for remote/hybrid roles, contract work, or just to talk tech. If you need someone who can actually deliver working solutions, let's connect.</p>
+        
+        <div class="contact-info">
+          <a href="mailto:balogundaniel130@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>balogundaniel130@gmail.com</span>
+          </a>
+          <a href="tel:+2348037262477" class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+234 803 726 2477</span>
+          </a>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Lagos, Nigeria (Remote OK)</span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/DanielOlo4" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/daniel-olorunjeda" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1sfkgkr-3dEuKBRoTmaxivD5TkLVA-4gu/view" target="_blank" aria-label="Resume">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="What do you want to build?" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
-  <footer role="contentinfo">
-    <p>© Daniel 2024. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built by Daniel Olorunjeda · 2024</p>
+      <p class="footer-note">No frameworks, no fluff — just clean code.</p>
+    </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('show');
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
